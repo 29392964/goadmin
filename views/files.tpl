@@ -164,3 +164,10 @@
         </div>
 {{end}}
 
+{{define "layout/js.tpl"}}
+        $(document).ready(function(){
+            $('.file-box').each(function() {
+                animationHover(this, 'pulse');
+            });
+        });
+{{end}}
